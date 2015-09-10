@@ -92,3 +92,9 @@ This is just a place with some unit tests to show that the code works as expecte
 ## Anything Else?
 
 As mentioned this is a bare bones example knocked together to provide some sort of idea as to how tags could function in a part of game design without needing to move mountains to drive in game effects, there are probably far better ways to handle this sort of thing, and this only scratches the surface of what you can do with a tag/keyword based approach.
+
+Incase you are still a bit unsure of what this is talking about, here are some simple diagrams showing what happens at a high level:
+
+![Example Diagram](https://cloud.githubusercontent.com/assets/927201/9785605/81dc57d8-57ab-11e5-80f5-dd8ff936af29.png)
+
+So in combat you would want to add your output effects from the CombatHandler to your base damage, to give you your tagged benefits/penalty. In the context of Crafting you would apply the output effects to your crafted item, so silver being brittle but of higher value and the other components would yield a default sword but with higher value and damage, but less durability. I am omitting configuration data as its described above but hopefully this at least gets you started.
